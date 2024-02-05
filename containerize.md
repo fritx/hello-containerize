@@ -192,3 +192,13 @@ docker run -d -p 8999:8080 docker.io/$dockerUser/hello:2
 curl -m 1 localhost:8999/shouldBeV2
 curl -m 1 localhost:8999/quit
 ```
+
+### All-in-One script
+
+```sh
+# setUp
+export dockerUser=monopole
+export githubOrg=monopole
+
+sh test.sh
+```
